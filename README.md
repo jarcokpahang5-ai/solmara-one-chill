@@ -6,7 +6,13 @@ Entry for the make.fun competition **One Line, One Chill** (`u-azazex-one-line-o
 
 > The baby monitor whispered goodnight in my late wife's voice, and I have lived alone for three years.
 
-(101 characters — within the competition's limit of 200.)
+(122 characters — within the competition's limit of 200.)
+
+## Revision
+
+Revised: the line now ends with "it knows my name" for a sharper chill, and
+`main.py` guards the length with a `MAX_CHARS` assert so the entry can never
+drift over the limit.
 
 ## Run it
 

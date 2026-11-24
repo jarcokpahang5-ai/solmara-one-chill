@@ -7,9 +7,15 @@ where the competition's scorer reads it.
 
 import os
 
+# Competition limit for the single horror line.
+MAX_CHARS = 200
+
 LINE = (
-    "The baby monitor whispered goodnight in my late wife's voice, and I have lived alone for three years."
+    "The baby monitor whispered goodnight in my late wife's voice, and I have lived alone for three years — it knows my name."
 )
+
+# Guard: the entry must stay inside the competition's character limit.
+assert len(LINE) <= MAX_CHARS, f"line is {len(LINE)} chars, over the {MAX_CHARS} limit"
 
 
 def main():
